@@ -15,6 +15,7 @@
 
 ## Материалы для жюри
 
+- [Демо на YouTube, 2:46](https://youtu.be/tXnqsyJXt5Y).
 - [Демо со звуком, 2:46 — MP4](https://github.com/gascoigne07/seruen-ai/releases/download/v1.0/Seruen_AI_demo.mp4).
 - [Презентация PDF](docs/presentation/Seruen_AI.pdf) и [редактируемые слайды PPTX](docs/presentation/Seruen_AI.pptx).
 - [Тестовые сценарии](docs/TEST_SCENARIOS.md), [ограничения](docs/REQUIREMENTS.md) и [проверки реальной модели](docs/LIVE_VALIDATION.md).
