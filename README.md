@@ -13,6 +13,15 @@
 
 [Соответствие брифу, риски и развитие](docs/REQUIREMENTS.md).
 
+## Материалы для жюри
+
+- [Демо со звуком, 2:21 — MP4](https://github.com/gascoigne07/seruen-ai/releases/download/v1.0/Seruen_AI_demo.mp4).
+- [Презентация PDF](docs/presentation/Seruen_AI.pdf) и [редактируемые слайды PPTX](docs/presentation/Seruen_AI.pptx).
+- [Тестовые сценарии](docs/TEST_SCENARIOS.md), [ограничения](docs/REQUIREMENTS.md) и [проверки реальной модели](docs/LIVE_VALIDATION.md).
+- [Весь комплект для скачивания](https://github.com/gascoigne07/seruen-ai/releases/tag/v1.0).
+
+Демо смонтировано из реальных экранов приложения и слайдов с синтезированной озвучкой.
+
 ## Запуск
 
 Проверенная среда: Python 3.13. Готовый датасет уже лежит в `data/`.
