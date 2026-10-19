@@ -1,0 +1,26 @@
+[project]
+name = "seruen-ai"
+version = "0.1.0"
+description = "Seruen AI — ИИ-помощник по прогулкам в Астане (RAG по собственному датасету POI)"
+requires-python = ">=3.13"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+exclude = [".venv", "data"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "C4", "SIM"]
+ignore = [
+    "E501",    # long lines are fine in russian template strings
+    "SIM105",  # try/except/pass is clearer than contextlib.suppress here
+]
+
+[tool.ruff.lint.per-file-ignores]
+# the scenario table reads better as dict(key=value) rows than as dict literals
+"tools/gen_test_scenarios.py" = ["C408"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = ["ignore::DeprecationWarning"]

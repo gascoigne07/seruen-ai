@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-10-19T14:20:48+00:00",
+  "raw_file": "data/raw/overpass_20261019T142047Z.json",
+  "raw_elements": 1232,
+  "pois_total": 1171,
+  "dropped_unnamed": 0,
+  "dropped_no_coords": 0,
+  "dropped_duplicates": 61,
+  "with_hours": 317,
+  "with_hours_pct": 27.1,
+  "with_website": 192,
+  "with_phone": 178,
+  "with_wikidata": 12,
+  "wheelchair_known": 67,
+  "wheelchair_yes": 41,
+  "name_ru_localized": 408,
+  "name_generated": 261,
+  "indoor_known": 1152,
+  "by_category": {
+    "restaurant": 385,
+    "cafe": 302,
+    "playground": 262,
+    "landmark": 66,
+    "mall": 51,
+    "park": 39,
+    "sport": 24,
+    "theatre": 24,
+    "museum": 10,
+    "library": 8
+  },
+  "license": "ODbL 1.0 — © OpenStreetMap contributors",
+  "known_limitations": [
+    "часы работы есть не у всех объектов — такие помечаются как unknown, а не «открыто»",
+    "розетки, уровень шума и наличие пеленальной комнаты в OSM почти не размечены",
+    "координаты way/relation приведены к одной центральной точке (out center)"
+  ],
+  "with_wikipedia_description": 14,
+  "enrichment": {
+    "by_wikidata": 0,
+    "by_geosearch": 5,
+    "attempted": 5,
+    "articles_found": 131
+  },
+  "licenses": [
+    "OpenStreetMap — ODbL 1.0, © OpenStreetMap contributors",
+    "Wikidata — CC0",
+    "Wikipedia extracts — CC BY-SA 4.0"
+  ]
+}

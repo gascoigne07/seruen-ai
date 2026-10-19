@@ -1,0 +1,24 @@
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+
+# environments and secrets
+.venv/
+venv/
+.env
+.env.local
+.seruen/
+
+# local tooling
+.DS_Store
+.streamlit/secrets.toml
+
+# raw dumps are committed (they are small and prove the dataset is ours),
+# but keep anything oversized out of git
+data/raw/*.json.gz
+*.log

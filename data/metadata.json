@@ -1,0 +1,51 @@
+{
+  "runs": [
+    {
+      "fetched_at": "2026-10-19T14:09:04+00:00",
+      "mirror": "https://overpass-api.de/api/interpreter",
+      "file": "data/raw/overpass_20261019T140904Z.json",
+      "bytes": 280722,
+      "sha256": "b0e3318315bb4708436910df85e3e6d2d845a449b724081778b6dab285db5643",
+      "elements": 929,
+      "bbox": {
+        "south": 51.02,
+        "west": 71.25,
+        "north": 51.25,
+        "east": 71.65
+      },
+      "query": "[out:json][timeout:180];\n(\n  nwr[\"name\"][\"amenity\"~\"^(cafe|restaurant|fast_food|bar|pub|library|theatre|cinema|arts_centre|ice_cream)$\"](51.02,71.25,51.25,71.65);\n  nwr[\"name\"][\"tourism\"~\"^(museum|gallery|attraction|viewpoint|artwork|zoo|theme_park)$\"](51.02,71.25,51.25,71.65);\n  nwr[\"name\"][\"leisure\"~\"^(park|garden|playground|sports_centre|ice_rink|water_park)$\"](51.02,71.25,51.25,71.65);\n  nwr[\"name\"][\"historic\"~\"^(monument|memorial)$\"](51.02,71.25,51.25,71.65);\n  nwr[\"name\"][\"shop\"~\"^(mall)$\"](51.02,71.25,51.25,71.65);\n);\nout center tags;\n"
+    },
+    {
+      "fetched_at": "2026-10-19T14:20:47+00:00",
+      "mirror": "https://overpass.private.coffee/api/interpreter",
+      "file": "data/raw/overpass_20261019T142047Z.json",
+      "bytes": 322989,
+      "sha256": "bd2e2785ecabbf814547206d48178d77d97a827b3362f5d3719b62c361ee4c36",
+      "elements": 1232,
+      "bbox": {
+        "south": 51.02,
+        "west": 71.25,
+        "north": 51.25,
+        "east": 71.65
+      },
+      "query": "[out:json][timeout:180];\n(\n  nwr[\"name\"][\"amenity\"~\"^(cafe|restaurant|fast_food|bar|pub|library|theatre|cinema|arts_centre|ice_cream)$\"](51.02,71.25,51.25,71.65);\n  nwr[\"name\"][\"tourism\"~\"^(museum|gallery|attraction|viewpoint|artwork|zoo|theme_park)$\"](51.02,71.25,51.25,71.65);\n  nwr[\"name\"][\"leisure\"~\"^(park|garden|playground|sports_centre|ice_rink|water_park)$\"](51.02,71.25,51.25,71.65);\n  nwr[\"name\"][\"historic\"~\"^(monument|memorial)$\"](51.02,71.25,51.25,71.65);\n  nwr[\"name\"][\"shop\"~\"^(mall)$\"](51.02,71.25,51.25,71.65);\n  nwr[\"leisure\"~\"^(playground)$\"](51.02,71.25,51.25,71.65);\n);\nout center tags;\n"
+    }
+  ],
+  "latest": {
+    "fetched_at": "2026-10-19T14:20:47+00:00",
+    "mirror": "https://overpass.private.coffee/api/interpreter",
+    "file": "data/raw/overpass_20261019T142047Z.json",
+    "bytes": 322989,
+    "sha256": "bd2e2785ecabbf814547206d48178d77d97a827b3362f5d3719b62c361ee4c36",
+    "elements": 1232,
+    "bbox": {
+      "south": 51.02,
+      "west": 71.25,
+      "north": 51.25,
+      "east": 71.65
+    },
+    "query": "[out:json][timeout:180];\n(\n  nwr[\"name\"][\"amenity\"~\"^(cafe|restaurant|fast_food|bar|pub|library|theatre|cinema|arts_centre|ice_cream)$\"](51.02,71.25,51.25,71.65);\n  nwr[\"name\"][\"tourism\"~\"^(museum|gallery|attraction|viewpoint|artwork|zoo|theme_park)$\"](51.02,71.25,51.25,71.65);\n  nwr[\"name\"][\"leisure\"~\"^(park|garden|playground|sports_centre|ice_rink|water_park)$\"](51.02,71.25,51.25,71.65);\n  nwr[\"name\"][\"historic\"~\"^(monument|memorial)$\"](51.02,71.25,51.25,71.65);\n  nwr[\"name\"][\"shop\"~\"^(mall)$\"](51.02,71.25,51.25,71.65);\n  nwr[\"leisure\"~\"^(playground)$\"](51.02,71.25,51.25,71.65);\n);\nout center tags;\n"
+  },
+  "license": "ODbL 1.0 — © OpenStreetMap contributors",
+  "source": "OpenStreetMap via Overpass API"
+}

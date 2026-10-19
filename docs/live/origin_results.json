@@ -1,0 +1,199 @@
+[
+  {
+    "query": "я вот в центральном парке. куда могу отсюда пойти",
+    "status": "resolved",
+    "place": {
+      "id": "visitastana/central-park",
+      "name": "Центральный парк",
+      "lat": 51.152859,
+      "lon": 71.41902,
+      "address": "Астана",
+      "source_url": "https://visitastana.kz/ru/about-city/what-to-see/tsentralnyy-park/",
+      "source": "visitastana",
+      "kind": "park"
+    },
+    "candidates": [
+      {
+        "id": "visitastana/central-park",
+        "name": "Центральный парк",
+        "lat": 51.152859,
+        "lon": 71.41902,
+        "address": "Астана",
+        "source_url": "https://visitastana.kz/ru/about-city/what-to-see/tsentralnyy-park/",
+        "source": "visitastana",
+        "kind": "park"
+      }
+    ],
+    "message": "",
+    "place_query": "центральном парке",
+    "context_query": "я вот в  . куда могу отсюда пойти",
+    "ai_used": true,
+    "seconds": 4.4
+  },
+  {
+    "query": "я возле ботанического сада куда могу пойти",
+    "status": "resolved",
+    "place": {
+      "id": "way/1196402246",
+      "name": "Ботанический сад",
+      "lat": 51.106165,
+      "lon": 71.416571,
+      "address": "",
+      "source_url": "https://www.openstreetmap.org/way/1196402246",
+      "source": "local",
+      "kind": "park"
+    },
+    "candidates": [
+      {
+        "id": "way/1196402246",
+        "name": "Ботанический сад",
+        "lat": 51.106165,
+        "lon": 71.416571,
+        "address": "",
+        "source_url": "https://www.openstreetmap.org/way/1196402246",
+        "source": "local",
+        "kind": "park"
+      }
+    ],
+    "message": "",
+    "place_query": "ботанического сада",
+    "context_query": "я возле   куда могу пойти",
+    "ai_used": true,
+    "seconds": 4.2
+  },
+  {
+    "query": "Я на Кенесары 32, хочу кофе 45 минут",
+    "status": "ambiguous",
+    "place": null,
+    "candidates": [
+      {
+        "id": "way/240938584",
+        "name": "Кенесары көшесі 32",
+        "lat": 51.1636116,
+        "lon": 71.4220997,
+        "address": "Кенесары көшесі 32, Сарыарқа ауданы, Астана, Қазақстан",
+        "source_url": "https://www.openstreetmap.org/way/240938584",
+        "source": "photon",
+        "kind": "yes"
+      },
+      {
+        "id": "node/4916363251",
+        "name": "Е. Рахмадиев атындағы Мемлекеттік академиялық филармония",
+        "lat": 51.1636794,
+        "lon": 71.4223498,
+        "address": "Кенесары көшесі 32, Сарыарқа ауданы, Астана, Қазақстан",
+        "source_url": "https://www.openstreetmap.org/node/4916363251",
+        "source": "photon",
+        "kind": "arts_centre"
+      },
+      {
+        "id": "node/4624217690",
+        "name": "Бистро Коктем",
+        "lat": 51.1638752,
+        "lon": 71.4227548,
+        "address": "Кенесары көшесі 32, Сарыарқа ауданы, Астана, Қазақстан",
+        "source_url": "https://www.openstreetmap.org/node/4624217690",
+        "source": "photon",
+        "kind": "restaurant"
+      },
+      {
+        "id": "way/1088449010",
+        "name": "Кенесары көшесі 32/1",
+        "lat": 51.1645326,
+        "lon": 71.4232105,
+        "address": "Кенесары көшесі 32/1, Сарыарқа ауданы, Астана, Қазақстан",
+        "source_url": "https://www.openstreetmap.org/way/1088449010",
+        "source": "photon",
+        "kind": "yes"
+      },
+      {
+        "id": "way/1088449013",
+        "name": "Кенесары көшесі 32/1а",
+        "lat": 51.1634534,
+        "lon": 71.4236497,
+        "address": "Кенесары көшесі 32/1а, Сарыарқа ауданы, Астана, Қазақстан",
+        "source_url": "https://www.openstreetmap.org/way/1088449013",
+        "source": "photon",
+        "kind": "yes"
+      },
+      {
+        "id": "way/1088449012",
+        "name": "Кенесары көшесі 32/3",
+        "lat": 51.1643145,
+        "lon": 71.4232682,
+        "address": "Кенесары көшесі 32/3, Сарыарқа ауданы, Астана, Қазақстан",
+        "source_url": "https://www.openstreetmap.org/way/1088449012",
+        "source": "photon",
+        "kind": "yes"
+      },
+      {
+        "id": "way/1088449011",
+        "name": "Кенесары көшесі 32/2",
+        "lat": 51.1644248,
+        "lon": 71.4232407,
+        "address": "Кенесары көшесі 32/2, Сарыарқа ауданы, Астана, Қазақстан",
+        "source_url": "https://www.openstreetmap.org/way/1088449011",
+        "source": "photon",
+        "kind": "yes"
+      }
+    ],
+    "message": "Подтвердите точку старта по найденным местам.",
+    "place_query": "Кенесары 32",
+    "context_query": "Я на  , хочу кофе 45 минут",
+    "ai_used": true,
+    "seconds": 4.3
+  },
+  {
+    "query": "Я возле Астана Арены, куда пойти на 60 минут",
+    "status": "resolved",
+    "place": {
+      "id": "visitastana/astana-arena",
+      "name": "Астана Арена",
+      "lat": 51.10822724361,
+      "lon": 71.402559305566,
+      "address": "Астана",
+      "source_url": "https://visitastana.kz/ru/about-city/what-to-see/stadion-astana-arena/",
+      "source": "visitastana",
+      "kind": "stadium"
+    },
+    "candidates": [
+      {
+        "id": "visitastana/astana-arena",
+        "name": "Астана Арена",
+        "lat": 51.10822724361,
+        "lon": 71.402559305566,
+        "address": "Астана",
+        "source_url": "https://visitastana.kz/ru/about-city/what-to-see/stadion-astana-arena/",
+        "source": "visitastana",
+        "kind": "stadium"
+      }
+    ],
+    "message": "",
+    "place_query": "Астана Арены",
+    "context_query": "Я возле  , куда пойти на 60 минут",
+    "ai_used": true,
+    "seconds": 3.1
+  },
+  {
+    "query": "Я возле несуществующего маяка, хочу дойти до Байтерека",
+    "status": "unresolved",
+    "place": null,
+    "candidates": [],
+    "message": "Не удалось подтвердить место в Астане. Уточните адрес или выберите точку вручную.",
+    "place_query": "несуществующего маяка",
+    "context_query": "Я возле  , хочу дойти до Байтерека",
+    "ai_used": true,
+    "seconds": 4.9
+  },
+  {
+    "query": "куда могу пойти",
+    "status": "missing",
+    "place": null,
+    "candidates": [],
+    "message": "Укажите название места или адрес, где вы сейчас.",
+    "place_query": "",
+    "context_query": "куда могу пойти",
+    "ai_used": true,
+    "seconds": 2.0
+  }
+]

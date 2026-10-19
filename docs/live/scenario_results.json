@@ -1,0 +1,1493 @@
+[
+  {
+    "scenario": "Прогулка у Mega Silk Way на 45 минут",
+    "query": "Я у Mega Silk Way, хочу погулять 45 минут",
+    "intent": {
+      "raw_query": "Я у Mega Silk Way, хочу погулять 45 минут",
+      "categories_wanted": [
+        "park",
+        "landmark",
+        "viewpoint"
+      ],
+      "categories_avoided": [],
+      "time_budget_min": 45,
+      "with_child": false,
+      "group_size": 1,
+      "needs_wheelchair": false,
+      "indoor_pref": null,
+      "return_to_start": false,
+      "night": false,
+      "language": "ru",
+      "wants_quiet": false,
+      "wants_sockets": false,
+      "wants_unusual": false,
+      "wants_work": false,
+      "wants_route": false,
+      "keywords": [
+        "погулять"
+      ],
+      "source": "regex"
+    },
+    "answer": {
+      "mode": "openai",
+      "model": "gpt-6-luna",
+      "language": "ru",
+      "note": "Модель выбрала места из отфильтрованных кандидатов. Факты и ограничения показаны по данным POI; идеи занятий сгенерированы и требуют проверки условий на месте.",
+      "fallback_reason": null,
+      "candidates_sent_to_model": 3,
+      "picks": [
+        {
+          "poi_id": "way/1467797207",
+          "name": "NU Park",
+          "why": "11 мин пешком (586 м), часы работы не подтверждены. Парк в Астане. Особенности по данным OSM: парк. Категория совпадает с запросом.",
+          "activity": "Если условия на месте позволяют: Прогуляйтесь по парку, чтобы провести время на свежем воздухе.",
+          "visit_minutes": 29,
+          "confidence": "medium",
+          "source": "poi_data",
+          "activity_source": "generated_idea",
+          "category": "park",
+          "distance_m": 586,
+          "walk_min": 11,
+          "lat": 51.08727,
+          "lon": 71.399439,
+          "hours": {
+            "status": "unknown",
+            "confidence": "low",
+            "raw": null,
+            "detail": "в данных OSM нет часов работы",
+            "minutes_until_close": null
+          },
+          "uncertainties": [
+            "часы работы не подтверждены",
+            "доступность на коляске не размечена"
+          ],
+          "source_url": "https://www.openstreetmap.org/way/1467797207",
+          "source_license": "ODbL",
+          "description_source": "osm_tags",
+          "evidence": [
+            {
+              "field": "name",
+              "source_url": "https://www.openstreetmap.org/way/1467797207"
+            },
+            {
+              "field": "category",
+              "source_url": "https://www.openstreetmap.org/way/1467797207"
+            }
+          ],
+          "fetched_at": "2026-10-19T14:20:47+00:00"
+        }
+      ]
+    },
+    "route": null,
+    "data_used": {
+      "location_rounded": [
+        51.089,
+        71.407
+      ],
+      "location_label": "Mega Silk Way",
+      "local_time": "2026-10-19 12:00",
+      "timezone": "Asia/Almaty",
+      "time_budget_min": 45,
+      "filters": [
+        "бюджет 45 мин",
+        "категории: park, landmark, viewpoint",
+        "язык ответа: ru"
+      ],
+      "dataset_size": 1171,
+      "search_radius_m": 1885,
+      "candidates_after_filters": 3,
+      "candidates_prepared": 3,
+      "candidates_shown_to_model": 3,
+      "excluded_closed": 0,
+      "excluded_too_far": 102,
+      "excluded_no_time": 0,
+      "excluded_by_reason": {
+        "too_far": 102,
+        "closed": 0,
+        "no_time": 0,
+        "category": 1066,
+        "wheelchair": 0,
+        "indoor": 0,
+        "child": 0,
+        "closing": 0
+      },
+      "unknown_hours_kept": 3,
+      "radius_relaxed": false,
+      "weather": "погода не учитывалась (нет данных)",
+      "intent_source": "regex",
+      "answer_mode": "openai",
+      "model": "gpt-6-luna",
+      "dataset_license": "OpenStreetMap, ODbL — © OpenStreetMap contributors"
+    },
+    "checks": {
+      "count_matches_candidates": true,
+      "unique_retrieved_ids": true,
+      "cards_have_explanation_action_source": true,
+      "known_closed_not_recommended": true,
+      "unknown_hours_have_warning": true,
+      "each_visit_fits_budget": true,
+      "route_fits_budget": true,
+      "route_uses_selected_ids": true,
+      "empty_candidates_no_model_call": true,
+      "offline_no_model_call": true,
+      "requested_category_preserved": true
+    }
+  },
+  {
+    "scenario": "Тихое кафе с розетками, поработать час",
+    "query": "ищу тихое кафе с розетками поработать за ноутбуком, час",
+    "intent": {
+      "raw_query": "ищу тихое кафе с розетками поработать за ноутбуком, час",
+      "categories_wanted": [
+        "cafe"
+      ],
+      "categories_avoided": [],
+      "time_budget_min": 60,
+      "with_child": false,
+      "group_size": 1,
+      "needs_wheelchair": false,
+      "indoor_pref": null,
+      "return_to_start": false,
+      "night": false,
+      "language": "ru",
+      "wants_quiet": true,
+      "wants_sockets": true,
+      "wants_unusual": false,
+      "wants_work": true,
+      "wants_route": false,
+      "keywords": [
+        "ищу",
+        "тихое",
+        "кафе",
+        "розетками",
+        "поработать",
+        "ноутбуком"
+      ],
+      "source": "regex"
+    },
+    "answer": {
+      "mode": "openai",
+      "model": "gpt-6-luna",
+      "language": "ru",
+      "note": "Модель выбрала места из отфильтрованных кандидатов. Факты и ограничения показаны по данным POI; идеи занятий сгенерированы и требуют проверки условий на месте.",
+      "fallback_reason": null,
+      "candidates_sent_to_model": 8,
+      "picks": [
+        {
+          "poi_id": "node/4853972122",
+          "name": "Фаттуш",
+          "why": "7 мин пешком (376 м), открыто в указанное время по данным OSM. Кафе в Астане. Кухня — lebanese; отмечен wi-fi. Категория совпадает с запросом. Розетки и тишину нужно уточнить у места.",
+          "activity": "Уточните условия работы с ноутбуком и наличие свободного места; выделите доступное время на одну задачу.",
+          "visit_minutes": 48,
+          "confidence": "medium",
+          "source": "poi_data",
+          "activity_source": "generated_idea",
+          "category": "cafe",
+          "distance_m": 376,
+          "walk_min": 7,
+          "lat": 51.127761,
+          "lon": 71.425175,
+          "hours": {
+            "status": "open",
+            "confidence": "high",
+            "raw": "Mo-Su 10:00-23:00",
+            "detail": "по данным OSM: Mo-Su 10:00-23:00",
+            "minutes_until_close": 660
+          },
+          "uncertainties": [
+            "доступность на коляске не размечена",
+            "розетки и уровень шума в данных не размечены",
+            "цены и наличие свободных мест не подтверждены"
+          ],
+          "source_url": "https://www.openstreetmap.org/node/4853972122",
+          "source_license": "ODbL",
+          "description_source": "osm_tags",
+          "evidence": [
+            {
+              "field": "name",
+              "source_url": "https://www.openstreetmap.org/node/4853972122"
+            },
+            {
+              "field": "category",
+              "source_url": "https://www.openstreetmap.org/node/4853972122"
+            },
+            {
+              "field": "hours_raw",
+              "source_url": "https://www.openstreetmap.org/node/4853972122"
+            }
+          ],
+          "fetched_at": "2026-10-19T14:20:47+00:00"
+        }
+      ]
+    },
+    "route": null,
+    "data_used": {
+      "location_rounded": [
+        51.128,
+        71.43
+      ],
+      "location_label": "Байтерек",
+      "local_time": "2026-10-19 12:00",
+      "timezone": "Asia/Almaty",
+      "time_budget_min": 60,
+      "filters": [
+        "бюджет 60 мин",
+        "категории: cafe",
+        "тихое место",
+        "розетки / wi-fi",
+        "место для работы / учёбы",
+        "язык ответа: ru"
+      ],
+      "dataset_size": 1171,
+      "search_radius_m": 2154,
+      "candidates_after_filters": 32,
+      "candidates_prepared": 8,
+      "candidates_shown_to_model": 8,
+      "excluded_closed": 1,
+      "excluded_too_far": 240,
+      "excluded_no_time": 29,
+      "excluded_by_reason": {
+        "too_far": 240,
+        "closed": 1,
+        "no_time": 29,
+        "category": 869,
+        "wheelchair": 0,
+        "indoor": 0,
+        "child": 0,
+        "closing": 0
+      },
+      "unknown_hours_kept": 18,
+      "radius_relaxed": false,
+      "weather": "погода не учитывалась (нет данных)",
+      "intent_source": "regex",
+      "answer_mode": "openai",
+      "model": "gpt-6-luna",
+      "dataset_license": "OpenStreetMap, ODbL — © OpenStreetMap contributors"
+    },
+    "checks": {
+      "count_matches_candidates": true,
+      "unique_retrieved_ids": true,
+      "cards_have_explanation_action_source": true,
+      "known_closed_not_recommended": true,
+      "unknown_hours_have_warning": true,
+      "each_visit_fits_budget": true,
+      "route_fits_budget": true,
+      "route_uses_selected_ids": true,
+      "empty_candidates_no_model_call": true,
+      "offline_no_model_call": true,
+      "single_place_activity_no_route": true,
+      "requested_category_preserved": true
+    }
+  },
+  {
+    "scenario": "Прогулка с ребёнком и коляской",
+    "query": "гуляю с ребёнком и коляской, есть час, куда пойти",
+    "intent": {
+      "raw_query": "гуляю с ребёнком и коляской, есть час, куда пойти",
+      "categories_wanted": [
+        "playground",
+        "park",
+        "mall"
+      ],
+      "categories_avoided": [],
+      "time_budget_min": 60,
+      "with_child": true,
+      "group_size": 1,
+      "needs_wheelchair": true,
+      "indoor_pref": null,
+      "return_to_start": false,
+      "night": false,
+      "language": "ru",
+      "wants_quiet": false,
+      "wants_sockets": false,
+      "wants_unusual": false,
+      "wants_work": false,
+      "wants_route": false,
+      "keywords": [
+        "гуляю",
+        "ребёнком",
+        "коляской",
+        "куда",
+        "пойти"
+      ],
+      "source": "regex"
+    },
+    "answer": {
+      "mode": "openai",
+      "model": "gpt-6-luna",
+      "language": "ru",
+      "note": "Модель выбрала места из отфильтрованных кандидатов. Факты и ограничения показаны по данным POI; идеи занятий сгенерированы и требуют проверки условий на месте.",
+      "fallback_reason": null,
+      "candidates_sent_to_model": 1,
+      "picks": [
+        {
+          "poi_id": "way/460703779",
+          "name": "Хан Шатыр",
+          "why": "1 мин пешком (2 м), часы работы не подтверждены. «Хан Шатыр» (по-русски: ошибочно — «Ханский шатёр», правильно — «Хан среди шатров») — крупный торгово-развлекательный центр в столице Казахстана Астане. Категория совпадает с запросом. В OSM отмечена доступность для коляски.",
+          "activity": "Если условия на месте позволяют: Прогуляйтесь с ребёнком внутри торгового центра, двигаясь в удобном для вас темпе.",
+          "visit_minutes": 54,
+          "confidence": "medium",
+          "source": "poi_data",
+          "activity_source": "generated_idea",
+          "category": "mall",
+          "distance_m": 2,
+          "walk_min": 1,
+          "lat": 51.132509,
+          "lon": 71.403873,
+          "hours": {
+            "status": "unknown",
+            "confidence": "low",
+            "raw": "Mo-Su,PH 10:00-23:00",
+            "detail": "праздничное расписание не проверено: Mo-Su,PH 10:00-23:00",
+            "minutes_until_close": null
+          },
+          "uncertainties": [
+            "часы работы не подтверждены"
+          ],
+          "source_url": "https://www.openstreetmap.org/way/460703779",
+          "source_license": "ODbL",
+          "description_source": "wikipedia",
+          "evidence": [
+            {
+              "field": "name",
+              "source_url": "https://www.openstreetmap.org/way/460703779"
+            },
+            {
+              "field": "category",
+              "source_url": "https://www.openstreetmap.org/way/460703779"
+            },
+            {
+              "field": "hours_raw",
+              "source_url": "https://www.openstreetmap.org/way/460703779"
+            },
+            {
+              "field": "wheelchair",
+              "source_url": "https://www.openstreetmap.org/way/460703779"
+            },
+            {
+              "field": "description",
+              "source_url": "https://ru.wikipedia.org/wiki/%D0%A5%D0%B0%D0%BD_%D0%A8%D0%B0%D1%82%D1%8B%D1%80"
+            }
+          ],
+          "fetched_at": "2026-10-19T14:20:47+00:00"
+        }
+      ]
+    },
+    "route": null,
+    "data_used": {
+      "location_rounded": [
+        51.133,
+        71.404
+      ],
+      "location_label": "Хан Шатыр",
+      "local_time": "2026-10-19 12:00",
+      "timezone": "Asia/Almaty",
+      "time_budget_min": 60,
+      "filters": [
+        "бюджет 60 мин",
+        "категории: playground, park, mall",
+        "с ребёнком",
+        "без ступеней / коляска",
+        "язык ответа: ru"
+      ],
+      "dataset_size": 1171,
+      "search_radius_m": 4362,
+      "candidates_after_filters": 1,
+      "candidates_prepared": 1,
+      "candidates_shown_to_model": 1,
+      "excluded_closed": 0,
+      "excluded_too_far": 178,
+      "excluded_no_time": 2,
+      "excluded_by_reason": {
+        "too_far": 178,
+        "closed": 0,
+        "no_time": 2,
+        "category": 819,
+        "wheelchair": 171,
+        "indoor": 0,
+        "child": 0,
+        "closing": 0
+      },
+      "unknown_hours_kept": 1,
+      "radius_relaxed": true,
+      "weather": "погода не учитывалась (нет данных)",
+      "intent_source": "regex",
+      "answer_mode": "openai",
+      "model": "gpt-6-luna",
+      "dataset_license": "OpenStreetMap, ODbL — © OpenStreetMap contributors"
+    },
+    "checks": {
+      "count_matches_candidates": true,
+      "unique_retrieved_ids": true,
+      "cards_have_explanation_action_source": true,
+      "known_closed_not_recommended": true,
+      "unknown_hours_have_warning": true,
+      "each_visit_fits_budget": true,
+      "route_fits_budget": true,
+      "route_uses_selected_ids": true,
+      "empty_candidates_no_model_call": true,
+      "offline_no_model_call": true,
+      "confirmed_wheelchair_only": true,
+      "child_context_preserved": true,
+      "no_child_bars": true
+    }
+  },
+  {
+    "scenario": "Турист: 2 часа до самолёта",
+    "query": "я турист, до самолёта 2 часа, хочу посмотреть что-то рядом",
+    "intent": {
+      "raw_query": "я турист, до самолёта 2 часа, хочу посмотреть что-то рядом",
+      "categories_wanted": [
+        "landmark"
+      ],
+      "categories_avoided": [],
+      "time_budget_min": 120,
+      "with_child": false,
+      "group_size": 1,
+      "needs_wheelchair": false,
+      "indoor_pref": null,
+      "return_to_start": true,
+      "night": false,
+      "language": "ru",
+      "wants_quiet": false,
+      "wants_sockets": false,
+      "wants_unusual": false,
+      "wants_work": false,
+      "wants_route": false,
+      "keywords": [
+        "турист",
+        "самолёта",
+        "посмотреть",
+        "что-то"
+      ],
+      "source": "regex"
+    },
+    "answer": {
+      "mode": "retrieval-template",
+      "model": null,
+      "language": "ru",
+      "note": "Подходящих мест не нашлось: не подтверждены нужные условия, доступность или часы, либо не хватает времени на дорогу и посещение. Увеличьте время, смените старт или пересмотрите фильтры. Перед вылетом отдельно оставьте время на регистрацию, досмотр и посадку. Расчёт прогулки не гарантирует, что вы успеете на рейс.",
+      "fallback_reason": "пустой список кандидатов",
+      "candidates_sent_to_model": 0,
+      "picks": []
+    },
+    "route": null,
+    "data_used": {
+      "location_rounded": [
+        51.022,
+        71.467
+      ],
+      "location_label": "Аэропорт Нурсултан Назарбаев",
+      "local_time": "2026-10-19 12:00",
+      "timezone": "Asia/Almaty",
+      "time_budget_min": 120,
+      "filters": [
+        "бюджет 120 мин",
+        "категории: landmark",
+        "вернуться к старту",
+        "язык ответа: ru"
+      ],
+      "dataset_size": 1171,
+      "search_radius_m": 5331,
+      "candidates_after_filters": 0,
+      "candidates_prepared": 0,
+      "candidates_shown_to_model": 0,
+      "excluded_closed": 0,
+      "excluded_too_far": 64,
+      "excluded_no_time": 2,
+      "excluded_by_reason": {
+        "too_far": 64,
+        "closed": 0,
+        "no_time": 2,
+        "category": 1105,
+        "wheelchair": 0,
+        "indoor": 0,
+        "child": 0,
+        "closing": 0
+      },
+      "unknown_hours_kept": 0,
+      "radius_relaxed": true,
+      "weather": "погода не учитывалась (нет данных)",
+      "intent_source": "regex",
+      "answer_mode": "retrieval-template",
+      "model": "—",
+      "dataset_license": "OpenStreetMap, ODbL — © OpenStreetMap contributors"
+    },
+    "checks": {
+      "count_matches_candidates": true,
+      "unique_retrieved_ids": true,
+      "cards_have_explanation_action_source": true,
+      "known_closed_not_recommended": true,
+      "unknown_hours_have_warning": true,
+      "each_visit_fits_budget": true,
+      "route_fits_budget": true,
+      "route_uses_selected_ids": true,
+      "empty_candidates_no_model_call": true,
+      "offline_no_model_call": true,
+      "return_preserved": true
+    }
+  },
+  {
+    "scenario": "Необычная активность ночью",
+    "query": "хочу чего-то необычного ночью, 90 минут",
+    "intent": {
+      "raw_query": "хочу чего-то необычного ночью, 90 минут",
+      "categories_wanted": [],
+      "categories_avoided": [],
+      "time_budget_min": 90,
+      "with_child": false,
+      "group_size": 1,
+      "needs_wheelchair": false,
+      "indoor_pref": null,
+      "return_to_start": false,
+      "night": true,
+      "language": "ru",
+      "wants_quiet": false,
+      "wants_sockets": false,
+      "wants_unusual": true,
+      "wants_work": false,
+      "wants_route": false,
+      "keywords": [
+        "чего-то",
+        "необычного",
+        "ночью"
+      ],
+      "source": "regex"
+    },
+    "answer": {
+      "mode": "openai",
+      "model": "gpt-6-luna",
+      "language": "ru",
+      "note": "Модель выбрала места из отфильтрованных кандидатов. Факты и ограничения показаны по данным POI; идеи занятий сгенерированы и требуют проверки условий на месте.",
+      "fallback_reason": null,
+      "candidates_sent_to_model": 8,
+      "picks": [
+        {
+          "poi_id": "node/13340040665",
+          "name": "Жетігенші",
+          "why": "29 мин пешком (1558 м), часы работы не подтверждены. Арт-объект в Астане. Особенности по данным OSM: арт-объект.",
+          "activity": "Если условия на месте позволяют: Рассмотрите арт-объект и понаблюдайте, как он выглядит в ночной обстановке.",
+          "visit_minutes": 10,
+          "confidence": "medium",
+          "source": "poi_data",
+          "activity_source": "generated_idea",
+          "category": "landmark",
+          "distance_m": 1558,
+          "walk_min": 29,
+          "lat": 51.134669,
+          "lon": 71.41061,
+          "hours": {
+            "status": "unknown",
+            "confidence": "low",
+            "raw": null,
+            "detail": "в данных OSM нет часов работы",
+            "minutes_until_close": null
+          },
+          "uncertainties": [
+            "часы работы не подтверждены",
+            "доступность на коляске не размечена"
+          ],
+          "source_url": "https://www.openstreetmap.org/node/13340040665",
+          "source_license": "ODbL",
+          "description_source": "osm_tags",
+          "evidence": [
+            {
+              "field": "name",
+              "source_url": "https://www.openstreetmap.org/node/13340040665"
+            },
+            {
+              "field": "category",
+              "source_url": "https://www.openstreetmap.org/node/13340040665"
+            }
+          ],
+          "fetched_at": "2026-10-19T14:20:47+00:00"
+        }
+      ]
+    },
+    "route": null,
+    "data_used": {
+      "location_rounded": [
+        51.128,
+        71.43
+      ],
+      "location_label": "Байтерек",
+      "local_time": "2026-10-19 23:30",
+      "timezone": "Asia/Almaty",
+      "time_budget_min": 90,
+      "filters": [
+        "бюджет 90 мин",
+        "поздний час",
+        "необычное",
+        "язык ответа: ru"
+      ],
+      "dataset_size": 1171,
+      "search_radius_m": 4038,
+      "candidates_after_filters": 223,
+      "candidates_prepared": 8,
+      "candidates_shown_to_model": 8,
+      "excluded_closed": 56,
+      "excluded_too_far": 491,
+      "excluded_no_time": 386,
+      "excluded_by_reason": {
+        "too_far": 491,
+        "closed": 56,
+        "no_time": 386,
+        "category": 0,
+        "wheelchair": 0,
+        "indoor": 0,
+        "child": 0,
+        "closing": 15
+      },
+      "unknown_hours_kept": 198,
+      "radius_relaxed": false,
+      "weather": "погода не учитывалась (нет данных)",
+      "intent_source": "regex",
+      "answer_mode": "openai",
+      "model": "gpt-6-luna",
+      "dataset_license": "OpenStreetMap, ODbL — © OpenStreetMap contributors"
+    },
+    "checks": {
+      "count_matches_candidates": true,
+      "unique_retrieved_ids": true,
+      "cards_have_explanation_action_source": true,
+      "known_closed_not_recommended": true,
+      "unknown_hours_have_warning": true,
+      "each_visit_fits_budget": true,
+      "route_fits_budget": true,
+      "route_uses_selected_ids": true,
+      "empty_candidates_no_model_call": true,
+      "offline_no_model_call": true,
+      "night_preserved": true,
+      "unusual_preserved": true
+    }
+  },
+  {
+    "scenario": "Ответ на английском языке",
+    "query": "I have 40 minutes near Baiterek, show me something interesting",
+    "intent": {
+      "raw_query": "I have 40 minutes near Baiterek, show me something interesting",
+      "categories_wanted": [],
+      "categories_avoided": [],
+      "time_budget_min": 40,
+      "with_child": false,
+      "group_size": 1,
+      "needs_wheelchair": false,
+      "indoor_pref": null,
+      "return_to_start": false,
+      "night": false,
+      "language": "en",
+      "wants_quiet": false,
+      "wants_sockets": false,
+      "wants_unusual": true,
+      "wants_work": false,
+      "wants_route": false,
+      "keywords": [
+        "have",
+        "show",
+        "something",
+        "interesting"
+      ],
+      "source": "regex"
+    },
+    "answer": {
+      "mode": "openai",
+      "model": "gpt-6-luna",
+      "language": "en",
+      "note": "The model selected places from filtered candidates. Facts and limitations use POI data; activity ideas are generated and require checking conditions on site.",
+      "fallback_reason": null,
+      "candidates_sent_to_model": 8,
+      "picks": [
+        {
+          "poi_id": "way/230401645",
+          "name": "Bayterek",
+          "why": "1 min on foot (2 m), opening hours not confirmed.",
+          "activity": "If access is permitted, find an unusual detail and photograph it from two accessible positions; compare the impressions.",
+          "visit_minutes": 30,
+          "confidence": "medium",
+          "source": "poi_data",
+          "activity_source": "generated_idea",
+          "category": "landmark",
+          "distance_m": 2,
+          "walk_min": 1,
+          "lat": 51.128284,
+          "lon": 71.430515,
+          "hours": {
+            "status": "unknown",
+            "confidence": "low",
+            "raw": null,
+            "detail": "в данных OSM нет часов работы",
+            "minutes_until_close": null
+          },
+          "uncertainties": [
+            "opening hours not confirmed",
+            "wheelchair access is not documented"
+          ],
+          "source_url": "https://www.openstreetmap.org/way/230401645",
+          "source_license": "ODbL",
+          "description_source": "wikipedia",
+          "evidence": [
+            {
+              "field": "name",
+              "source_url": "https://www.openstreetmap.org/way/230401645"
+            },
+            {
+              "field": "category",
+              "source_url": "https://www.openstreetmap.org/way/230401645"
+            },
+            {
+              "field": "description",
+              "source_url": "https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D0%B9%D1%82%D0%B5%D1%80%D0%B5%D0%BA_%28%D0%BC%D0%BE%D0%BD%D1%83%D0%BC%D0%B5%D0%BD%D1%82%29"
+            }
+          ],
+          "fetched_at": "2026-10-19T14:20:47+00:00"
+        }
+      ]
+    },
+    "route": null,
+    "data_used": {
+      "location_rounded": [
+        51.128,
+        71.43
+      ],
+      "location_label": "Байтерек",
+      "local_time": "2026-10-19 12:00",
+      "timezone": "Asia/Almaty",
+      "time_budget_min": 40,
+      "filters": [
+        "бюджет 40 мин",
+        "необычное",
+        "язык ответа: en"
+      ],
+      "dataset_size": 1171,
+      "search_radius_m": 1346,
+      "candidates_after_filters": 46,
+      "candidates_prepared": 8,
+      "candidates_shown_to_model": 8,
+      "excluded_closed": 2,
+      "excluded_too_far": 1043,
+      "excluded_no_time": 80,
+      "excluded_by_reason": {
+        "too_far": 1043,
+        "closed": 2,
+        "no_time": 80,
+        "category": 0,
+        "wheelchair": 0,
+        "indoor": 0,
+        "child": 0,
+        "closing": 0
+      },
+      "unknown_hours_kept": 31,
+      "radius_relaxed": false,
+      "weather": "погода не учитывалась (нет данных)",
+      "intent_source": "regex",
+      "answer_mode": "openai",
+      "model": "gpt-6-luna",
+      "dataset_license": "OpenStreetMap, ODbL — © OpenStreetMap contributors"
+    },
+    "checks": {
+      "count_matches_candidates": true,
+      "unique_retrieved_ids": true,
+      "cards_have_explanation_action_source": true,
+      "known_closed_not_recommended": true,
+      "unknown_hours_have_warning": true,
+      "each_visit_fits_budget": true,
+      "route_fits_budget": true,
+      "route_uses_selected_ids": true,
+      "empty_candidates_no_model_call": true,
+      "offline_no_model_call": true,
+      "response_language": true
+    }
+  },
+  {
+    "scenario": "Казахский запрос: парк за 40 минут",
+    "query": "Байтерек жанындамын, 40 минут уақытым бар, саябаққа барғым келеді",
+    "intent": {
+      "raw_query": "Байтерек жанындамын, 40 минут уақытым бар, саябаққа барғым келеді",
+      "categories_wanted": [
+        "park"
+      ],
+      "categories_avoided": [],
+      "time_budget_min": 40,
+      "with_child": false,
+      "group_size": 1,
+      "needs_wheelchair": false,
+      "indoor_pref": null,
+      "return_to_start": false,
+      "night": false,
+      "language": "kk",
+      "wants_quiet": false,
+      "wants_sockets": false,
+      "wants_unusual": false,
+      "wants_work": false,
+      "wants_route": false,
+      "keywords": [
+        "уақытым",
+        "бар",
+        "саябаққа",
+        "барғым",
+        "келеді"
+      ],
+      "source": "regex"
+    },
+    "answer": {
+      "mode": "retrieval-template",
+      "model": null,
+      "language": "kk",
+      "note": "Сүзгілерге, қолжетімділікке, жұмыс уақытына және уақыт бюджетіне сәйкес орын табылмады. Уақытты көбейтіңіз, бастапқы нүктені немесе сүзгілерді өзгертіңіз.",
+      "fallback_reason": "пустой список кандидатов",
+      "candidates_sent_to_model": 0,
+      "picks": []
+    },
+    "route": null,
+    "data_used": {
+      "location_rounded": [
+        51.128,
+        71.43
+      ],
+      "location_label": "Байтерек",
+      "local_time": "2026-10-19 12:00",
+      "timezone": "Asia/Almaty",
+      "time_budget_min": 40,
+      "filters": [
+        "бюджет 40 мин",
+        "категории: park",
+        "язык ответа: kk"
+      ],
+      "dataset_size": 1171,
+      "search_radius_m": 2423,
+      "candidates_after_filters": 0,
+      "candidates_prepared": 0,
+      "candidates_shown_to_model": 0,
+      "excluded_closed": 0,
+      "excluded_too_far": 27,
+      "excluded_no_time": 12,
+      "excluded_by_reason": {
+        "too_far": 27,
+        "closed": 0,
+        "no_time": 12,
+        "category": 1132,
+        "wheelchair": 0,
+        "indoor": 0,
+        "child": 0,
+        "closing": 0
+      },
+      "unknown_hours_kept": 0,
+      "radius_relaxed": true,
+      "weather": "погода не учитывалась (нет данных)",
+      "intent_source": "regex",
+      "answer_mode": "retrieval-template",
+      "model": "—",
+      "dataset_license": "OpenStreetMap, ODbL — © OpenStreetMap contributors"
+    },
+    "checks": {
+      "count_matches_candidates": true,
+      "unique_retrieved_ids": true,
+      "cards_have_explanation_action_source": true,
+      "known_closed_not_recommended": true,
+      "unknown_hours_have_warning": true,
+      "each_visit_fits_budget": true,
+      "route_fits_budget": true,
+      "route_uses_selected_ids": true,
+      "empty_candidates_no_model_call": true,
+      "offline_no_model_call": true,
+      "requested_category_preserved": true,
+      "response_language": true
+    }
+  },
+  {
+    "scenario": "Казахский запрос: парк за 60 минут",
+    "query": "Байтерек жанындамын, 60 минут уақытым бар, саябаққа барғым келеді",
+    "intent": {
+      "raw_query": "Байтерек жанындамын, 60 минут уақытым бар, саябаққа барғым келеді",
+      "categories_wanted": [
+        "park"
+      ],
+      "categories_avoided": [],
+      "time_budget_min": 60,
+      "with_child": false,
+      "group_size": 1,
+      "needs_wheelchair": false,
+      "indoor_pref": null,
+      "return_to_start": false,
+      "night": false,
+      "language": "kk",
+      "wants_quiet": false,
+      "wants_sockets": false,
+      "wants_unusual": false,
+      "wants_work": false,
+      "wants_route": false,
+      "keywords": [
+        "уақытым",
+        "бар",
+        "саябаққа",
+        "барғым",
+        "келеді"
+      ],
+      "source": "regex"
+    },
+    "answer": {
+      "mode": "openai",
+      "model": "gpt-6-luna",
+      "language": "kk",
+      "note": "Модель сүзгіден өткен орындарды таңдады. Деректер мен шектеулер POI деректерінен алынған; әрекет идеялары жасалған, шарттарды сол жерде тексеріңіз.",
+      "fallback_reason": null,
+      "candidates_sent_to_model": 5,
+      "picks": [
+        {
+          "poi_id": "way/69232075",
+          "name": "Жетісу саябағы",
+          "why": "19 мин жаяу (1019 м), жұмыс уақыты расталмаған. Санат сұранысыңызға сәйкес.",
+          "activity": "Қолжетімді жолмен қысқа серуен жасаңыз; уақыттың жартысы өткенде кері бұрылыңыз.",
+          "visit_minutes": 36,
+          "confidence": "medium",
+          "source": "poi_data",
+          "activity_source": "generated_idea",
+          "category": "park",
+          "distance_m": 1019,
+          "walk_min": 19,
+          "lat": 51.135989,
+          "lon": 71.43845,
+          "hours": {
+            "status": "unknown",
+            "confidence": "low",
+            "raw": null,
+            "detail": "в данных OSM нет часов работы",
+            "minutes_until_close": null
+          },
+          "uncertainties": [
+            "жұмыс уақыты расталмаған",
+            "арбамен кіру мүмкіндігі белгіленбеген"
+          ],
+          "source_url": "https://www.openstreetmap.org/way/69232075",
+          "source_license": "ODbL",
+          "description_source": "wikipedia",
+          "evidence": [
+            {
+              "field": "name",
+              "source_url": "https://www.openstreetmap.org/way/69232075"
+            },
+            {
+              "field": "category",
+              "source_url": "https://www.openstreetmap.org/way/69232075"
+            },
+            {
+              "field": "description",
+              "source_url": "https://ru.wikipedia.org/wiki/%D0%96%D0%B5%D1%82%D1%8B%D1%81%D1%83_%28%D0%BF%D0%B0%D1%80%D0%BA%29"
+            }
+          ],
+          "fetched_at": "2026-10-19T14:20:47+00:00"
+        }
+      ]
+    },
+    "route": null,
+    "data_used": {
+      "location_rounded": [
+        51.128,
+        71.43
+      ],
+      "location_label": "Байтерек",
+      "local_time": "2026-10-19 12:00",
+      "timezone": "Asia/Almaty",
+      "time_budget_min": 60,
+      "filters": [
+        "бюджет 60 мин",
+        "категории: park",
+        "язык ответа: kk"
+      ],
+      "dataset_size": 1171,
+      "search_radius_m": 2423,
+      "candidates_after_filters": 5,
+      "candidates_prepared": 5,
+      "candidates_shown_to_model": 5,
+      "excluded_closed": 0,
+      "excluded_too_far": 27,
+      "excluded_no_time": 7,
+      "excluded_by_reason": {
+        "too_far": 27,
+        "closed": 0,
+        "no_time": 7,
+        "category": 1132,
+        "wheelchair": 0,
+        "indoor": 0,
+        "child": 0,
+        "closing": 0
+      },
+      "unknown_hours_kept": 5,
+      "radius_relaxed": false,
+      "weather": "погода не учитывалась (нет данных)",
+      "intent_source": "regex",
+      "answer_mode": "openai",
+      "model": "gpt-6-luna",
+      "dataset_license": "OpenStreetMap, ODbL — © OpenStreetMap contributors"
+    },
+    "checks": {
+      "count_matches_candidates": true,
+      "unique_retrieved_ids": true,
+      "cards_have_explanation_action_source": true,
+      "known_closed_not_recommended": true,
+      "unknown_hours_have_warning": true,
+      "each_visit_fits_budget": true,
+      "route_fits_budget": true,
+      "route_uses_selected_ids": true,
+      "empty_candidates_no_model_call": true,
+      "offline_no_model_call": true,
+      "requested_category_preserved": true,
+      "response_language": true
+    }
+  },
+  {
+    "scenario": "Запрос трёх остановок с возвратом к Байтереку",
+    "query": "Я у Байтерека, хочу пеший маршрут из 3 мест за 90 минут и вернуться к началу",
+    "intent": {
+      "raw_query": "Я у Байтерека, хочу пеший маршрут из 3 мест за 90 минут и вернуться к началу",
+      "categories_wanted": [],
+      "categories_avoided": [],
+      "time_budget_min": 90,
+      "with_child": false,
+      "group_size": 1,
+      "needs_wheelchair": false,
+      "indoor_pref": null,
+      "return_to_start": true,
+      "night": false,
+      "language": "ru",
+      "wants_quiet": false,
+      "wants_sockets": false,
+      "wants_unusual": false,
+      "wants_work": false,
+      "wants_route": true,
+      "keywords": [
+        "пеший",
+        "маршрут",
+        "мест",
+        "вернуться",
+        "началу"
+      ],
+      "source": "regex"
+    },
+    "answer": {
+      "mode": "openai",
+      "model": "gpt-6-luna",
+      "language": "ru",
+      "note": "Модель выбрала места из отфильтрованных кандидатов. Факты и ограничения показаны по данным POI; идеи занятий сгенерированы и требуют проверки условий на месте.",
+      "fallback_reason": null,
+      "candidates_sent_to_model": 8,
+      "picks": [
+        {
+          "poi_id": "node/6408271985",
+          "name": "CrepeCafe",
+          "why": "4 мин пешком (179 м), открыто в указанное время по данным OSM. Кафе в Астане. Особенности по данным OSM: кафе, AZAKI2019.",
+          "activity": "Если условия на месте позволяют: Сделайте короткую остановку в кафе перед продолжением прогулки.",
+          "visit_minutes": 10,
+          "confidence": "high",
+          "source": "poi_data",
+          "activity_source": "generated_idea",
+          "category": "cafe",
+          "distance_m": 179,
+          "walk_min": 4,
+          "lat": 51.129382,
+          "lon": 71.428593,
+          "hours": {
+            "status": "open",
+            "confidence": "high",
+            "raw": "Mo-Fr 08:00-00:00; Sa-Su 09:00-00:00",
+            "detail": "по данным OSM: Mo-Fr 08:00-00:00; Sa-Su 09:00-00:00",
+            "minutes_until_close": 720
+          },
+          "uncertainties": [
+            "доступность на коляске не размечена",
+            "розетки и уровень шума в данных не размечены",
+            "цены и наличие свободных мест не подтверждены"
+          ],
+          "source_url": "https://www.openstreetmap.org/node/6408271985",
+          "source_license": "ODbL",
+          "description_source": "osm_tags",
+          "evidence": [
+            {
+              "field": "name",
+              "source_url": "https://www.openstreetmap.org/node/6408271985"
+            },
+            {
+              "field": "category",
+              "source_url": "https://www.openstreetmap.org/node/6408271985"
+            },
+            {
+              "field": "hours_raw",
+              "source_url": "https://www.openstreetmap.org/node/6408271985"
+            }
+          ],
+          "fetched_at": "2026-10-19T14:20:47+00:00"
+        },
+        {
+          "poi_id": "node/10598438988",
+          "name": "YouMe",
+          "why": "4 мин пешком (209 м), открыто в указанное время по данным OSM. Фастфуд в Астане. Кухня — суши.",
+          "activity": "Уточните меню, цены и время ожидания перед заказом.",
+          "visit_minutes": 30,
+          "confidence": "high",
+          "source": "poi_data",
+          "activity_source": "generated_idea",
+          "category": "restaurant",
+          "distance_m": 209,
+          "walk_min": 4,
+          "lat": 51.129413,
+          "lon": 71.42809,
+          "hours": {
+            "status": "open",
+            "confidence": "high",
+            "raw": "Mo-Su 10:00-23:00",
+            "detail": "по данным OSM: Mo-Su 10:00-23:00",
+            "minutes_until_close": 660
+          },
+          "uncertainties": [
+            "доступность на коляске не размечена",
+            "розетки и уровень шума в данных не размечены",
+            "цены и наличие свободных мест не подтверждены"
+          ],
+          "source_url": "https://www.openstreetmap.org/node/10598438988",
+          "source_license": "ODbL",
+          "description_source": "osm_tags",
+          "evidence": [
+            {
+              "field": "name",
+              "source_url": "https://www.openstreetmap.org/node/10598438988"
+            },
+            {
+              "field": "category",
+              "source_url": "https://www.openstreetmap.org/node/10598438988"
+            },
+            {
+              "field": "hours_raw",
+              "source_url": "https://www.openstreetmap.org/node/10598438988"
+            }
+          ],
+          "fetched_at": "2026-10-19T14:20:47+00:00"
+        },
+        {
+          "poi_id": "node/9047331880",
+          "name": "Starbucks",
+          "why": "7 мин пешком (350 м), открыто в указанное время по данным OSM. Кафе в Астане. Кухня — кофейня; можно взять с собой.",
+          "activity": "Проверьте меню и возможность сесть, затем сделайте короткую паузу за напитком.",
+          "visit_minutes": 10,
+          "confidence": "high",
+          "source": "poi_data",
+          "activity_source": "generated_idea",
+          "category": "cafe",
+          "distance_m": 350,
+          "walk_min": 7,
+          "lat": 51.128073,
+          "lon": 71.425491,
+          "hours": {
+            "status": "open",
+            "confidence": "high",
+            "raw": "Mo-Su 09:00-23:00",
+            "detail": "по данным OSM: Mo-Su 09:00-23:00",
+            "minutes_until_close": 660
+          },
+          "uncertainties": [
+            "доступность на коляске не размечена",
+            "розетки и уровень шума в данных не размечены",
+            "цены и наличие свободных мест не подтверждены"
+          ],
+          "source_url": "https://www.openstreetmap.org/node/9047331880",
+          "source_license": "ODbL",
+          "description_source": "osm_tags",
+          "evidence": [
+            {
+              "field": "name",
+              "source_url": "https://www.openstreetmap.org/node/9047331880"
+            },
+            {
+              "field": "category",
+              "source_url": "https://www.openstreetmap.org/node/9047331880"
+            },
+            {
+              "field": "hours_raw",
+              "source_url": "https://www.openstreetmap.org/node/9047331880"
+            }
+          ],
+          "fetched_at": "2026-10-19T14:20:47+00:00"
+        }
+      ]
+    },
+    "route": {
+      "order": [
+        "node/6408271985",
+        "node/10598438988",
+        "node/9047331880"
+      ],
+      "legs": [
+        {
+          "from_name": "старт",
+          "to_name": "CrepeCafe",
+          "distance_m": 179,
+          "walk_min": 4
+        },
+        {
+          "from_name": "CrepeCafe",
+          "to_name": "YouMe",
+          "distance_m": 35,
+          "walk_min": 1
+        },
+        {
+          "from_name": "YouMe",
+          "to_name": "Starbucks",
+          "distance_m": 235,
+          "walk_min": 5
+        }
+      ],
+      "total_walk_min": 17,
+      "total_visit_min": 50,
+      "total_min": 67,
+      "return_leg": {
+        "from_name": "Starbucks",
+        "to_name": "старт",
+        "distance_m": 350,
+        "walk_min": 7
+      },
+      "stop_visit_min": {
+        "node/6408271985": 10,
+        "node/10598438988": 30,
+        "node/9047331880": 10
+      },
+      "trimmed": false,
+      "buffer_min": 5,
+      "planned_min": 72
+    },
+    "data_used": {
+      "location_rounded": [
+        51.128,
+        71.43
+      ],
+      "location_label": "Байтерек",
+      "local_time": "2026-10-19 12:00",
+      "timezone": "Asia/Almaty",
+      "time_budget_min": 90,
+      "filters": [
+        "бюджет 90 мин",
+        "вернуться к старту",
+        "маршрут по нескольким местам",
+        "язык ответа: ru"
+      ],
+      "dataset_size": 1171,
+      "search_radius_m": 2019,
+      "candidates_after_filters": 96,
+      "candidates_prepared": 8,
+      "candidates_shown_to_model": 8,
+      "excluded_closed": 2,
+      "excluded_too_far": 928,
+      "excluded_no_time": 145,
+      "excluded_by_reason": {
+        "too_far": 928,
+        "closed": 2,
+        "no_time": 145,
+        "category": 0,
+        "wheelchair": 0,
+        "indoor": 0,
+        "child": 0,
+        "closing": 0
+      },
+      "unknown_hours_kept": 62,
+      "radius_relaxed": false,
+      "weather": "погода не учитывалась (нет данных)",
+      "intent_source": "regex",
+      "answer_mode": "openai",
+      "model": "gpt-6-luna",
+      "dataset_license": "OpenStreetMap, ODbL — © OpenStreetMap contributors"
+    },
+    "checks": {
+      "count_matches_candidates": true,
+      "unique_retrieved_ids": true,
+      "cards_have_explanation_action_source": true,
+      "known_closed_not_recommended": true,
+      "unknown_hours_have_warning": true,
+      "each_visit_fits_budget": true,
+      "route_fits_budget": true,
+      "route_uses_selected_ids": true,
+      "empty_candidates_no_model_call": true,
+      "offline_no_model_call": true,
+      "explicit_route_stops": true,
+      "return_preserved": true
+    }
+  },
+  {
+    "scenario": "Старт возле Ботанического сада из текста",
+    "query": "я возле ботанического сада куда могу пойти",
+    "intent": {
+      "raw_query": "я возле ботанического сада куда могу пойти",
+      "categories_wanted": [],
+      "categories_avoided": [],
+      "time_budget_min": 60,
+      "with_child": false,
+      "group_size": 1,
+      "needs_wheelchair": false,
+      "indoor_pref": null,
+      "return_to_start": false,
+      "night": false,
+      "language": "ru",
+      "wants_quiet": false,
+      "wants_sockets": false,
+      "wants_unusual": false,
+      "wants_work": false,
+      "wants_route": false,
+      "keywords": [
+        "куда",
+        "могу",
+        "пойти"
+      ],
+      "source": "regex"
+    },
+    "answer": {
+      "mode": "openai",
+      "model": "gpt-6-luna",
+      "language": "ru",
+      "note": "Модель выбрала места из отфильтрованных кандидатов. Факты и ограничения показаны по данным POI; идеи занятий сгенерированы и требуют проверки условий на месте.",
+      "fallback_reason": null,
+      "candidates_sent_to_model": 8,
+      "picks": [
+        {
+          "poi_id": "node/12098662467",
+          "name": "Canele",
+          "why": "11 мин пешком (557 м), открыто в указанное время по данным OSM. Кафе в Астане. Адрес: Гейдара Алиева 2.",
+          "activity": "Проверьте меню и возможность сесть, затем сделайте короткую паузу за напитком.",
+          "visit_minutes": 39,
+          "confidence": "high",
+          "source": "poi_data",
+          "activity_source": "generated_idea",
+          "category": "cafe",
+          "distance_m": 557,
+          "walk_min": 11,
+          "lat": 51.101312,
+          "lon": 71.414608,
+          "hours": {
+            "status": "open",
+            "confidence": "high",
+            "raw": "Mo-Su 09:00-22:00",
+            "detail": "по данным OSM: Mo-Su 09:00-22:00",
+            "minutes_until_close": 600
+          },
+          "uncertainties": [
+            "доступность на коляске не размечена",
+            "розетки и уровень шума в данных не размечены",
+            "цены и наличие свободных мест не подтверждены"
+          ],
+          "source_url": "https://www.openstreetmap.org/node/12098662467",
+          "source_license": "ODbL",
+          "description_source": "osm_tags",
+          "evidence": [
+            {
+              "field": "name",
+              "source_url": "https://www.openstreetmap.org/node/12098662467"
+            },
+            {
+              "field": "category",
+              "source_url": "https://www.openstreetmap.org/node/12098662467"
+            },
+            {
+              "field": "hours_raw",
+              "source_url": "https://www.openstreetmap.org/node/12098662467"
+            }
+          ],
+          "fetched_at": "2026-10-19T14:20:47+00:00"
+        },
+        {
+          "poi_id": "way/460048101",
+          "name": "Ледовая арена",
+          "why": "17 мин пешком (890 м), открыто в указанное время по данным OSM. Ледовый каток в Астане. Адрес: Қабанбай Батыр даңғылы 45А/1.",
+          "activity": "Если условия на месте позволяют: Уточни на месте возможность катания и выйди на лёд.",
+          "visit_minutes": 30,
+          "confidence": "medium",
+          "source": "poi_data",
+          "activity_source": "generated_idea",
+          "category": "sport",
+          "distance_m": 890,
+          "walk_min": 17,
+          "lat": 51.110307,
+          "lon": 71.405655,
+          "hours": {
+            "status": "open",
+            "confidence": "high",
+            "raw": "Mo-Fr 09:00-18:00",
+            "detail": "по данным OSM: Mo-Fr 09:00-18:00",
+            "minutes_until_close": 360
+          },
+          "uncertainties": [
+            "доступность на коляске не размечена",
+            "размещение в помещении или на улице не подтверждено",
+            "цены и наличие свободных мест не подтверждены"
+          ],
+          "source_url": "https://www.openstreetmap.org/way/460048101",
+          "source_license": "ODbL",
+          "description_source": "osm_tags",
+          "evidence": [
+            {
+              "field": "name",
+              "source_url": "https://www.openstreetmap.org/way/460048101"
+            },
+            {
+              "field": "category",
+              "source_url": "https://www.openstreetmap.org/way/460048101"
+            },
+            {
+              "field": "hours_raw",
+              "source_url": "https://www.openstreetmap.org/way/460048101"
+            }
+          ],
+          "fetched_at": "2026-10-19T14:20:47+00:00"
+        }
+      ]
+    },
+    "route": null,
+    "data_used": {
+      "location_rounded": [
+        51.106,
+        71.417
+      ],
+      "location_label": "Ботанический сад",
+      "local_time": "2026-10-19 12:00",
+      "timezone": "Asia/Almaty",
+      "time_budget_min": 60,
+      "filters": [
+        "бюджет 60 мин",
+        "язык ответа: ru"
+      ],
+      "dataset_size": 1171,
+      "search_radius_m": 2423,
+      "candidates_after_filters": 65,
+      "candidates_prepared": 8,
+      "candidates_shown_to_model": 8,
+      "excluded_closed": 0,
+      "excluded_too_far": 979,
+      "excluded_no_time": 127,
+      "excluded_by_reason": {
+        "too_far": 979,
+        "closed": 0,
+        "no_time": 127,
+        "category": 0,
+        "wheelchair": 0,
+        "indoor": 0,
+        "child": 0,
+        "closing": 0
+      },
+      "unknown_hours_kept": 52,
+      "radius_relaxed": false,
+      "weather": "погода не учитывалась (нет данных)",
+      "intent_source": "regex",
+      "answer_mode": "openai",
+      "model": "gpt-6-luna",
+      "dataset_license": "OpenStreetMap, ODbL — © OpenStreetMap contributors"
+    },
+    "checks": {
+      "count_matches_candidates": true,
+      "unique_retrieved_ids": true,
+      "cards_have_explanation_action_source": true,
+      "known_closed_not_recommended": true,
+      "unknown_hours_have_warning": true,
+      "each_visit_fits_budget": true,
+      "route_fits_budget": true,
+      "route_uses_selected_ids": true,
+      "empty_candidates_no_model_call": true,
+      "offline_no_model_call": true,
+      "named_origin_resolved": true
+    }
+  }
+]

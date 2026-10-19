@@ -1,0 +1,249 @@
+{
+  "generation_seconds": 7.2,
+  "query": "я вот в центральном парке. куда могу отсюда пойти",
+  "intent": {
+    "raw_query": "я вот в центральном парке. куда могу отсюда пойти",
+    "categories_wanted": [],
+    "categories_avoided": [],
+    "time_budget_min": 60,
+    "with_child": false,
+    "group_size": 1,
+    "needs_wheelchair": false,
+    "indoor_pref": null,
+    "return_to_start": false,
+    "night": false,
+    "language": "ru",
+    "wants_quiet": false,
+    "wants_sockets": false,
+    "wants_unusual": false,
+    "wants_work": false,
+    "wants_route": false,
+    "keywords": [
+      "вот",
+      "куда",
+      "могу",
+      "отсюда",
+      "пойти"
+    ],
+    "source": "regex"
+  },
+  "answer": {
+    "mode": "openai",
+    "model": "gpt-6-luna",
+    "language": "ru",
+    "note": "Модель выбрала места из отфильтрованных кандидатов. Факты и ограничения показаны по данным POI; идеи занятий сгенерированы и требуют проверки условий на месте.",
+    "fallback_reason": null,
+    "candidates_sent_to_model": 8,
+    "picks": [
+      {
+        "poi_id": "node/12049030089",
+        "name": "ШашлычОк",
+        "why": "8 мин пешком (394 м), открыто в указанное время по данным OSM. Фастфуд в Астане. Особенности по данным OSM: фастфуд.",
+        "activity": "Уточните меню, цены и время ожидания перед заказом.",
+        "visit_minutes": 30,
+        "confidence": "high",
+        "source": "poi_data",
+        "activity_source": "generated_idea",
+        "category": "restaurant",
+        "distance_m": 394,
+        "walk_min": 8,
+        "lat": 51.156386,
+        "lon": 71.419568,
+        "hours": {
+          "status": "open",
+          "confidence": "high",
+          "raw": "Mo-Su 11:00-00:00",
+          "detail": "по данным OSM: Mo-Su 11:00-00:00",
+          "minutes_until_close": 50
+        },
+        "uncertainties": [
+          "доступность на коляске не размечена",
+          "розетки и уровень шума в данных не размечены",
+          "цены и наличие свободных мест не подтверждены"
+        ],
+        "source_url": "https://www.openstreetmap.org/node/12049030089",
+        "source_license": "ODbL",
+        "description_source": "osm_tags",
+        "evidence": [
+          {
+            "field": "name",
+            "source_url": "https://www.openstreetmap.org/node/12049030089"
+          },
+          {
+            "field": "category",
+            "source_url": "https://www.openstreetmap.org/node/12049030089"
+          },
+          {
+            "field": "hours_raw",
+            "source_url": "https://www.openstreetmap.org/node/12049030089"
+          }
+        ],
+        "fetched_at": "2026-10-19T14:20:47+00:00"
+      },
+      {
+        "poi_id": "node/11345949789",
+        "name": "CrepeCafe",
+        "why": "11 мин пешком (568 м), открыто в указанное время по данным OSM. Кафе в Астане. Особенности по данным OSM: кафе, И.П.",
+        "activity": "Проверьте меню и возможность сесть, затем сделайте короткую паузу за напитком.",
+        "visit_minutes": 10,
+        "confidence": "high",
+        "source": "poi_data",
+        "activity_source": "generated_idea",
+        "category": "cafe",
+        "distance_m": 568,
+        "walk_min": 11,
+        "lat": 51.151995,
+        "lon": 71.410993,
+        "hours": {
+          "status": "open",
+          "confidence": "high",
+          "raw": "Mo-Fr 08:00-00:00, Sa-Su 09:00-00:00",
+          "detail": "по данным OSM: Mo-Fr 08:00-00:00, Sa-Su 09:00-00:00",
+          "minutes_until_close": 50
+        },
+        "uncertainties": [
+          "доступность на коляске не размечена",
+          "розетки и уровень шума в данных не размечены",
+          "цены и наличие свободных мест не подтверждены"
+        ],
+        "source_url": "https://www.openstreetmap.org/node/11345949789",
+        "source_license": "ODbL",
+        "description_source": "osm_tags",
+        "evidence": [
+          {
+            "field": "name",
+            "source_url": "https://www.openstreetmap.org/node/11345949789"
+          },
+          {
+            "field": "category",
+            "source_url": "https://www.openstreetmap.org/node/11345949789"
+          },
+          {
+            "field": "hours_raw",
+            "source_url": "https://www.openstreetmap.org/node/11345949789"
+          }
+        ],
+        "fetched_at": "2026-10-19T14:20:47+00:00"
+      },
+      {
+        "poi_id": "node/10148735979",
+        "name": "Олимпиада сақиналары",
+        "why": "3 мин пешком (142 м), часы работы не подтверждены. Достопримечательность в Астане. Особенности по данным OSM: достопримечательность.",
+        "activity": "Если условия на месте позволяют: Осмотрите достопримечательность по пути.",
+        "visit_minutes": 5,
+        "confidence": "low",
+        "source": "poi_data",
+        "activity_source": "generated_idea",
+        "category": "landmark",
+        "distance_m": 142,
+        "walk_min": 3,
+        "lat": 51.154075,
+        "lon": 71.419646,
+        "hours": {
+          "status": "unknown",
+          "confidence": "low",
+          "raw": null,
+          "detail": "в данных OSM нет часов работы",
+          "minutes_until_close": null
+        },
+        "uncertainties": [
+          "часы работы не подтверждены",
+          "доступность на коляске не размечена",
+          "размещение в помещении или на улице не подтверждено"
+        ],
+        "source_url": "https://www.openstreetmap.org/node/10148735979",
+        "source_license": "ODbL",
+        "description_source": "osm_tags",
+        "evidence": [
+          {
+            "field": "name",
+            "source_url": "https://www.openstreetmap.org/node/10148735979"
+          },
+          {
+            "field": "category",
+            "source_url": "https://www.openstreetmap.org/node/10148735979"
+          }
+        ],
+        "fetched_at": "2026-10-19T14:20:47+00:00"
+      }
+    ]
+  },
+  "route": {
+    "order": [
+      "node/10148735979",
+      "node/12049030089"
+    ],
+    "legs": [
+      {
+        "from_name": "старт",
+        "to_name": "Олимпиада сақиналары",
+        "distance_m": 142,
+        "walk_min": 3
+      },
+      {
+        "from_name": "Олимпиада сақиналары",
+        "to_name": "ШашлычОк",
+        "distance_m": 257,
+        "walk_min": 5
+      }
+    ],
+    "total_walk_min": 8,
+    "total_visit_min": 35,
+    "total_min": 43,
+    "return_leg": null,
+    "stop_visit_min": {
+      "node/10148735979": 5,
+      "node/12049030089": 30
+    },
+    "trimmed": false,
+    "buffer_min": 5,
+    "planned_min": 48
+  },
+  "data_used": {
+    "location_rounded": [
+      51.153,
+      71.419
+    ],
+    "location_label": "Центральный парк",
+    "origin_resolution": {
+      "status": "resolved",
+      "place_query": "центральном парке",
+      "ai_used": true,
+      "message": ""
+    },
+    "origin_source": "visitastana",
+    "origin_source_url": "https://visitastana.kz/ru/about-city/what-to-see/tsentralnyy-park/",
+    "local_time": "2026-10-19 23:10",
+    "timezone": "Asia/Almaty",
+    "time_budget_min": 60,
+    "filters": [
+      "бюджет 60 мин",
+      "язык ответа: ru"
+    ],
+    "dataset_size": 1171,
+    "search_radius_m": 2423,
+    "candidates_after_filters": 128,
+    "candidates_prepared": 8,
+    "candidates_shown_to_model": 8,
+    "excluded_closed": 26,
+    "excluded_too_far": 805,
+    "excluded_no_time": 201,
+    "excluded_by_reason": {
+      "too_far": 805,
+      "closed": 26,
+      "no_time": 201,
+      "category": 0,
+      "wheelchair": 0,
+      "indoor": 0,
+      "child": 0,
+      "closing": 11
+    },
+    "unknown_hours_kept": 103,
+    "radius_relaxed": false,
+    "weather": "погода не учитывалась (нет данных)",
+    "intent_source": "regex",
+    "answer_mode": "openai",
+    "model": "gpt-6-luna",
+    "dataset_license": "OpenStreetMap, ODbL — © OpenStreetMap contributors"
+  }
+}
